@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => 'Support Bibliothek allday tasks',
 	'category' => 'be',
 	'shy' => 0,
-	'version' => '0.1.1',
+	'version' => '0.1.2',
 	'module' => '',
 	'state' => 'beta',
 	'uploadfolder' => 0,
@@ -29,7 +29,7 @@ $EM_CONF[$_EXTKEY] = array(
 		array(
 			'depends' =>
 				array(
-					'php' => '5.3.13-5.5',
+					'php' => '5.3.10-5.5',
 					'typo3' => '6.2.0 - 6.2.999',
 				),
 			'conflicts' =>
