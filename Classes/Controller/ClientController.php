@@ -1,10 +1,10 @@
 <?php
-namespace Typovision\Biblio\Controller;
+namespace ABS\Biblio\Controller;
 /***************************************************************
  *  Copyright notice
  *
  *  (c) 2014
- *  @author Anja Leichsenring <maddy@typovision.de>
+ *  @author Anja Leichsenring <aleichsenring@ab-softlab.de>
  *  All rights reserved
  *
  *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -24,7 +24,7 @@ namespace Typovision\Biblio\Controller;
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
-use Typovision\Biblio\Domain\Model\Client;
+use ABS\Biblio\Domain\Model\Client;
 
 /**
  * Client Management handles all actions concerning clients
@@ -32,7 +32,7 @@ use Typovision\Biblio\Domain\Model\Client;
 class ClientController extends ActionController {
 
 	/**
-	 * @var \Typovision\Biblio\Domain\Repository\ClientRepository
+	 * @var \ABS\Biblio\Domain\Repository\ClientRepository
 	 * @inject
 	 */
 	protected $clientRepository;

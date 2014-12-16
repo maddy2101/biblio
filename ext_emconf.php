@@ -23,8 +23,8 @@ $EM_CONF[$_EXTKEY] = array(
 	'clearcacheonload' => 0,
 	'lockType' => '',
 	'author' => 'Anja Leichsenring',
-	'author_email' => 'maddy@typovision.de',
-	'author_company' => 'typovision GmbH',
+	'author_email' => 'aleichsenring@ab-softlab.de',
+	'author_company' => 'ab-softlab',
 	'constraints' =>
 		array(
 			'depends' =>

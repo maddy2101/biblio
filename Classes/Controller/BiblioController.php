@@ -1,10 +1,10 @@
 <?php
-namespace Typovision\Biblio\Controller;
+namespace ABS\Biblio\Controller;
 /***************************************************************
  *  Copyright notice
  *
  *  (c) 2014
- *  @author Anja Leichsenring <maddy@typovision.de>
+ *  @author Anja Leichsenring <aleichsenring@ab-softlab.de>
  *  All rights reserved
  *
  *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -31,7 +31,7 @@ use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 class BiblioController extends ActionController{
 
 	/**
-	 * @var \Typovision\Biblio\Domain\Repository\ClientRepository
+	 * @var \ABS\Biblio\Domain\Repository\ClientRepository
 	 * @inject
 	 */
 	protected $clientRepository;

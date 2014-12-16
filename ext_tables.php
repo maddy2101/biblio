@@ -4,7 +4,7 @@ if (!defined('TYPO3_MODE')) {
 }
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
-	'Typovision.' . $_EXTKEY,   // vendor + extkey, seperated by a dot
+	'ABS.' . $_EXTKEY,   // vendor + extkey, seperated by a dot
 	'user',                      // Backend Module group to place the module in
 	'management',               // module name
 	'',                         // position in the group

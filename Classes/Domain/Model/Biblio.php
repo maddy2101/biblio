@@ -1,10 +1,10 @@
 <?php
-namespace Typovision\Biblio\Domain\Model;
+namespace ABS\Biblio\Domain\Model;
 /***************************************************************
  *  Copyright notice
  *
  *  (c) 2014
- *  @author Anja Leichsenring <maddy@typovision.de>
+ *  @author Anja Leichsenring <aleichsenring@ab-softlab.de>
  *  All rights reserved
  *
  *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -37,17 +37,17 @@ class Biblio extends AbstractEntity {
 	protected $name;
 
 	/**
-	 * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Typovision\Biblio\Domain\Model\Book>
+	 * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\ABS\Biblio\Domain\Model\Book>
 	 */
 	protected $books;
 
 	/**
-	 * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Typovision\Biblio\Domain\Model\Digital>
+	 * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\ABS\Biblio\Domain\Model\Digital>
 	 */
 	protected $digitals;
 
 	/**
-	 * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Typovision\Biblio\Domain\Model\Client>
+	 * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\ABS\Biblio\Domain\Model\Client>
 	 */
 	protected $clients;
 
