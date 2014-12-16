@@ -1,0 +1,44 @@
+body {
+	padding: 2%;
+}
+
+.widget_1, .widget_2 {
+	padding: 1%;
+	width: 44%;
+	border: 1px solid;
+	margin: 15px;
+	float: left;
+}
+
+.widget_3, .widget_4, .widget_5 {
+	padding: 1%;
+	width: 28%;
+	border: 1px dashed;
+	margin: 15px;
+	float: left;
+}
+
+table.dataTable {
+	width: 100%;
+}
+
+table.dataTable tr {
+	padding: 1%;
+}
+
+table.dataTable th, table.dataTable td {
+	border: 1px solid;
+}
+
+a:link, a:visited {
+	text-decoration: underline;
+	color: #000055;
+}
+
+a:focus, a:active, a:hover {
+	font-weight: bold;
+}
+
+.clearfloat {
+	clear: both;
+}

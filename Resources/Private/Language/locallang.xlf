@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-03-16T22:23:40Z"
+		  product-name="biblio">
+		<header/>
+		<body>
+			<trans-unit id="widget_1">
+				<source>Fast Access</source>
+			</trans-unit>
+			<trans-unit id="widget_2">
+				<source>Today</source>
+			</trans-unit>
+			<trans-unit id="widget_3">
+				<source>In &amp; Out</source>
+			</trans-unit>
+			<trans-unit id="widget_4">
+				<source>Clients</source>
+			</trans-unit>
+			<trans-unit id="widget_5">
+				<source>Inventory</source>
+			</trans-unit>
+
+			<trans-unit id="tx_biblio_domain_model_book">
+				<source>Book</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_book.isbn">
+				<source>ISBN</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_book.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_book.author">
+				<source>Author</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_book.publish_year">
+				<source>Year of publishing</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_book.publisher">
+				<source>Publisher</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_book.identifier">
+				<source>Identifier</source>
+			</trans-unit>
+
+			<trans-unit id="tx_biblio_domain_model_digital">
+				<source>Digital</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_digital.isbn">
+				<source>ISBN</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_digital.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_digital.author">
+				<source>Author</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_digital.publish_year">
+				<source>Year of publishing</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_digital.publisher">
+				<source>Publisher</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_digital.identifier">
+				<source>Identifier</source>
+			</trans-unit>
+
+			<trans-unit id="tx_biblio_domain_model_client">
+				<source>Client</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_client.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_client.address">
+				<source>Street, Number</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_client.city">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_client.zip">
+				<source>Zip</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_client.telephone">
+				<source>Telephone</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_client.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_client.identifier">
+				<source>Identifier</source>
+			</trans-unit>
+
+			<trans-unit id="tx_biblio_domain_model_biblio">
+				<source>Biblio</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_biblio.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_biblio.books">
+				<source>Books</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_biblio.digitals">
+				<source>Digitals</source>
+			</trans-unit>
+			<trans-unit id="tx_biblio_domain_model_biblio.clients">
+				<source>Clients</source>
+			</trans-unit>
+
+			<trans-unit id="link.client.new">
+				<source>new client</source>
+			</trans-unit>
+			<trans-unit id="link.client.edit">
+				<source>edit</source>
+			</trans-unit>
+			<trans-unit id="link.client.delete">
+				<source>remove</source>
+			</trans-unit>
+
+			<trans-unit id="actions">
+				<source>Actions</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

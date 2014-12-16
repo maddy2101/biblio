@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	  xmlns:f="http://xsd.helmut-hummel.de/ns/TYPO3/CMS/Fluid/ViewHelpers">
+<head>
+	<title>Partials: List</title>
+</head>
+<body>
+<f:section name="Main">
+	<p>
+		<f:link.action action="new" controller="Client">
+			<f:translate key="link.client.new"/>
+		</f:link.action>
+	</p>
+	<table class="dataTable">
+		<thead>
+			<tr>
+				<th><f:translate key="tx_biblio_domain_model_client.name" /></th>
+				<th><f:translate key="tx_biblio_domain_model_client.identifier" /></th>
+				<th><f:translate key="tx_biblio_domain_model_client.address" /></th>
+				<th><f:translate key="actions" /></th>
+			</tr>
+		</thead>
+		<tbody>
+		<f:for each="{clients}" as="client">
+			<tr>
+				<td>{client.name}</td>
+				<td>{client.identifier}</td>
+				<td>{client.address}</td>
+				<td>
+					<span><f:link.action action="edit" controller="Client" arguments="{client:client}"><f:translate key="link.client.edit" /> </f:link.action> </span>
+					<span><f:link.action action="delete" controller="Client" arguments="{client:client}"><f:translate key="link.client.delete" /> </f:link.action> </span>
+				</td>
+			</tr>
+		</f:for>
+		</tbody>
+	</table>
+</f:section>
+</body>
+</html>
