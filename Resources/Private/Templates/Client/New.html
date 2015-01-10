@@ -3,6 +3,14 @@
 	<f:layout name="Default"/>
 	<title>Templates: New</title>
 	<f:section name="main">
-<p>This is new Template</p>
+		<f:form action="create" object="{client}" name="client" >
+			<p>
+				<label for="name"><f:translate key="tx_biblio_domain_model_client.name" /> </label>
+				<f:form.textfield property="name" />
+			</p>
+			<p>
+				<f:form.submit value="{f:translate(key:'submit_button')}" />
+			</p>
+		</f:form>
 	</f:section>
 </div>

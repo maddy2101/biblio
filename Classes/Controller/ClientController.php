@@ -41,7 +41,7 @@ class ClientController extends ActionController {
 	 * list all available customers
 	 */
 	public function listAction() {
-
+		$this->view->assign('clients', $this->clientRepository->findAll());
 	}
 
 	/**

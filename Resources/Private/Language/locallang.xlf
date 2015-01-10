@@ -118,6 +118,9 @@
 			<trans-unit id="actions">
 				<source>Actions</source>
 			</trans-unit>
+			<trans-unit id="submit_button">
+				<source>Submit</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
