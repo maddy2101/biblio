@@ -112,7 +112,7 @@ return array(
 				'type' => 'input',
 				'size' => 30,
 				'max' => 255,
-				'eval' => 'trim'
+				'eval' => 'trim, required'
 			),
 		),
 		'address' => array(

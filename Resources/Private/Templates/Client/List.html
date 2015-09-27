@@ -3,6 +3,8 @@
 	<f:layout name="Default"/>
 	<title>Templates: List</title>
 	<f:section name="main">
+		<f:flashMessages renderMode="div"/>
+
 		<f:render partial="Client/List" arguments="{clients:clients}" section="Main"/>
 	</f:section>
 </div>

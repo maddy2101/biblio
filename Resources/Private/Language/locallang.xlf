@@ -121,6 +121,13 @@
 			<trans-unit id="submit_button">
 				<source>Submit</source>
 			</trans-unit>
+
+			<trans-unit id="flashmessage.client.new.title">
+				<source>Success</source>
+			</trans-unit>
+			<trans-unit id="flashmessage.client.new">
+				<source>New client created</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

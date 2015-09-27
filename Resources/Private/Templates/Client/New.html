@@ -3,14 +3,75 @@
 	<f:layout name="Default"/>
 	<title>Templates: New</title>
 	<f:section name="main">
-		<f:form action="create" object="{client}" name="client" >
-			<p>
-				<label for="name"><f:translate key="tx_biblio_domain_model_client.name" /> </label>
-				<f:form.textfield property="name" />
-			</p>
-			<p>
-				<f:form.submit value="{f:translate(key:'submit_button')}" />
-			</p>
-		</f:form>
+			<f:form action="create" object="{client}" name="client">
+				<f:form.validationResults>
+					<f:if condition="{validationResults.flattenedErrors}">
+						<ul class="errors">
+							<f:for each="{validationResults.flattenedErrors}" as="errors"
+								   key="propertyPath">
+								<li>{propertyPath}
+									<ul>
+										<f:for each="{errors}" as="error">
+											<li>{error.code}: {error}</li>
+										</f:for>
+									</ul>
+								</li>
+							</f:for>
+						</ul>
+					</f:if>
+				</f:form.validationResults>
+				<p>
+					<label for="name">
+						<f:translate key="tx_biblio_domain_model_client.name"/>
+					</label> *
+					<f:form.textfield property="name"/>
+				</p>
+
+				<p>
+					<label for="address">
+						<f:translate key="tx_biblio_domain_model_client.address"/>
+					</label>
+					<f:form.textfield property="address"/>
+				</p>
+
+				<p>
+					<label for="city">
+						<f:translate key="tx_biblio_domain_model_client.city"/>
+					</label>
+					<f:form.textfield property="city"/>
+				</p>
+
+				<p>
+					<label for="zip">
+						<f:translate key="tx_biblio_domain_model_client.zip"/>
+					</label>
+					<f:form.textfield property="zip"/>
+				</p>
+
+				<p>
+					<label for="telephone">
+						<f:translate key="tx_biblio_domain_model_client.telephone"/>
+					</label>
+					<f:form.textfield property="telephone"/>
+				</p>
+
+				<p>
+					<label for="email">
+						<f:translate key="tx_biblio_domain_model_client.email"/>
+					</label>
+					<f:form.textfield property="email"/>
+				</p>
+
+				<p>
+					<label for="identifier">
+						<f:translate key="tx_biblio_domain_model_client.identifier"/>
+					</label>
+					<f:form.textfield property="identifier"/>
+				</p>
+
+				<p>
+					<f:form.submit value="{f:translate(key:'submit_button')}"/>
+				</p>
+			</f:form>
 	</f:section>
 </div>

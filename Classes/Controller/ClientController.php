@@ -25,6 +25,7 @@ namespace ABS\Biblio\Controller;
  ***************************************************************/
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use ABS\Biblio\Domain\Model\Client;
+use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
 
 /**
  * Client Management handles all actions concerning clients
@@ -38,6 +39,12 @@ class ClientController extends ActionController {
 	protected $clientRepository;
 
 	/**
+	 * @var \TYPO3\CMS\Extbase\Persistence\Generic\PersistenceManager
+	 * @inject
+	 */
+	protected $persistenceManager;
+
+	/**
 	 * list all available customers
 	 */
 	public function listAction() {
@@ -47,8 +54,8 @@ class ClientController extends ActionController {
 	/**
 	 * new Action show form for data input
 	 */
-	public function newAction(){
-
+	public function newAction() {
+		// do nothing but display the template
 	}
 
 	/**
@@ -58,6 +65,11 @@ class ClientController extends ActionController {
 	 */
 	public function createAction(Client $client) {
 		$this->clientRepository->add($client);
+		$this->persistenceManager->persistAll();
+		$this->addFlashMessage(
+				LocalizationUtility::translate('flashmessage.client.new', 'biblio'),
+				LocalizationUtility::translate('flashmessage.client.new.title', 'biblio')
+		);
 		$this->forward('list');
 	}
 
