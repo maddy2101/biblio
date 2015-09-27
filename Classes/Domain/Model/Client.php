@@ -48,6 +48,7 @@ class Client extends AbstractEntity {
 
 	/**
 	 * @var string
+	 * @validate Number, StringLength (minimum = 5, maximum = 5)
 	 */
 	protected $zip;
 
@@ -58,12 +59,14 @@ class Client extends AbstractEntity {
 
 	/**
 	 * @var string
+	 * @validate EmailAddress
 	 */
 	protected $email;
 
 	/**
 	 * the identifier used in the system for this special person
 	 * @var string
+	 * @validate NotEmpty
 	 */
 	protected $identifier;
 

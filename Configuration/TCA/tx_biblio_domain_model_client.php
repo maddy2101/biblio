@@ -21,7 +21,7 @@ return array(
 			'endtime' => 'endtime',
 		),
 		'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('biblio') . 'Resources/Public/Icons/tx_biblio_domain_model_client.gif',
-		'searchFields' => 'name, address, city, zip, telephone, email, identifier'
+		'searchFields' => 'name, address, city, zip, telephone, email, identifier',
 	),
 	'interface' => array(
 		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, name, address, city, zip, telephone, email, identifier',
@@ -36,7 +36,7 @@ return array(
 				'foreign_table_where' => 'ORDER BY sys_language.title',
 				'items' => array(
 					array('LLL:EXT:lang/locallang_general.xlf:LGL.allLanguages', -1),
-					array('LLL:EXT:lang/locallang_general.xlf:LGL.default_value', 0)
+					array('LLL:EXT:lang/locallang_general.xlf:LGL.default_value', 0),
 				),
 			),
 		),
@@ -64,7 +64,7 @@ return array(
 				'type' => 'input',
 				'size' => 30,
 				'max' => 255,
-			)
+			),
 		),
 		'hidden' => array(
 			'exclude' => 1,
@@ -85,7 +85,7 @@ return array(
 				'checkbox' => 0,
 				'default' => 0,
 				'range' => array(
-					'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
+					'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y')),
 				),
 			),
 		),
@@ -101,7 +101,7 @@ return array(
 				'checkbox' => 0,
 				'default' => 0,
 				'range' => array(
-					'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
+					'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y')),
 				),
 			),
 		),
@@ -112,7 +112,7 @@ return array(
 				'type' => 'input',
 				'size' => 30,
 				'max' => 255,
-				'eval' => 'trim, required'
+				'eval' => 'trim, required',
 			),
 		),
 		'address' => array(
@@ -122,7 +122,7 @@ return array(
 				'type' => 'input',
 				'size' => 30,
 				'max' => 255,
-				'eval' => 'trim'
+				'eval' => 'trim',
 			),
 		),
 		'city' => array(
@@ -132,7 +132,7 @@ return array(
 				'type' => 'input',
 				'size' => 30,
 				'max' => 255,
-				'eval' => 'trim'
+				'eval' => 'trim',
 			),
 		),
 		'zip' => array(
@@ -142,7 +142,11 @@ return array(
 				'type' => 'input',
 				'size' => 30,
 				'max' => 255,
-				'eval' => 'trim'
+				'eval' => 'int',
+				'range' => array(
+					'lower' => 0,
+					'upper' => 99999,
+				),
 			),
 		),
 		'telephone' => array(
@@ -152,7 +156,7 @@ return array(
 				'type' => 'input',
 				'size' => 30,
 				'max' => 255,
-				'eval' => 'trim'
+				'eval' => 'trim',
 			),
 		),
 		'email' => array(
@@ -162,7 +166,26 @@ return array(
 				'type' => 'input',
 				'size' => 30,
 				'max' => 255,
-				'eval' => 'trim'
+				'eval' => 'trim',
+				'wizards' => array(
+					'_PADDING' => 2,
+					'link' => array(
+						'type' => 'popup',
+						'title' => 'LLL:EXT:cms/locallang_ttc.xlf:header_link_formlabel',
+						'icon' => 'link_popup.gif',
+						'module' => array(
+							'name' => 'wizard_element_browser',
+							'urlParameters' => array(
+								'mode' => 'wizard',
+							),
+						),
+						'params' => array(
+							'blindLinkOptions' => 'file,page,spec,url,folder',
+						),
+						'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1',
+					),
+				),
+				'softref' => 'email',
 			),
 		),
 		'identifier' => array(
@@ -172,12 +195,12 @@ return array(
 				'type' => 'input',
 				'size' => 30,
 				'max' => 255,
-				'eval' => 'trim'
+				'eval' => 'trim, unique,required',
 			),
 		),
 	),
 	'types' => array(
-		'1' => array('showitem' => 'hidden, title, name;;1, identifier')
+		'1' => array('showitem' => 'hidden, title, name;;1, identifier'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => 'address, --linebreak--, zip, city, --linebreak--, telephone, email, '),
